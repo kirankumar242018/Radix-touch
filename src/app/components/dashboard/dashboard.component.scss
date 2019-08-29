@@ -1,0 +1,99 @@
+.heading1{
+    //border-right: 1px solid #c5c5c5;
+    margin-left:15px;
+    padding-right: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    color: #777;
+}
+.material-icons{
+    height:24px ;
+    width:24px ;
+    font-size:24px;
+    color: #777;
+}
+.home{
+    
+    padding-left:25px;
+    padding-right: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(27, 24, 24);
+}
+.arrow{
+    margin-top:5px;
+}
+.dashboard{
+    //margin-left:20px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #777;
+}
+.cards{
+    
+    margin-left:15px;
+    margin-bottom:20px;
+}
+.card-list{
+    
+    margin-left:15px;
+    margin-bottom:15px;
+}
+.card-body{
+    text-align: center;
+    
+}
+.card-size{
+    height:150px;
+    width:250px;
+    border-radius: 15px;
+}
+#barChart{
+    display: block;
+    margin: auto !important;
+
+    height: 50px !important;
+    width:50px !important;
+}
+#pieChart{
+    display: block;
+    margin: auto !important;
+
+    height: 50px !important;
+    width:75px !important;
+}
+#lineChart{
+    display: block;
+    margin: auto !important;
+
+    height: 50px !important;
+    width:75px !important;
+}
+#lineChart1{
+    display: block;
+    margin: auto !important;
+
+    height: 50px !important;
+    width:75px !important;
+}
+// .radarChart{
+//     display: block;
+//     margin: auto !important;
+
+//     height: 50px !important;
+//     width:75px !important;
+// }
+
+.report-size{
+    height:350px;
+    width:560px;
+    border-radius: 15px;
+}
+.card-report{
+    margin-left:25px;
+    margin-bottom:15px;
+}
+.title{
+    width:100%;
+    max-width: 90%;
+}
