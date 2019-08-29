@@ -7,6 +7,7 @@ import {DashboardComponent} from '../app/components/dashboard/dashboard.componen
 import { MatMaterialModule } from './mat-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatMaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    HttpClientModule,
 
   ],
   providers: [],

@@ -1,0 +1,58 @@
+{
+    "table_data":[
+        {
+            "img":"/assets/images/client1.jpg",
+            "name":"Jhon doe",
+            "email":"xyz@email.com",
+            "status":"Active",
+            "projectName":"ERP System",
+            "action1":"create",
+            "action2":"delete"
+        },
+        {
+            "img":"/assets/images/client2.jpg",
+            "name":"Sarah Smith",
+            "email":"xyz@email.com",
+            "status":"InActive",
+            "projectName":"Abc Website",
+            "action1":"create",
+            "action2":"delete"
+        },
+        {
+            "img":"/assets/images/client3.jpg",
+            "name":"Airi Satou",
+            "email":"xyz@email.com",
+            "status":"Active",
+            "projectName":"Android app",
+            "action1":"create",
+            "action2":"delete"
+        },
+        {
+            "img":"/assets/images/client4.jpg",
+            "name":"Angelia Raneos",
+            "email":"xyz@email.com",
+            "status":"Active",
+            "projectName":"Java Web",
+            "action1":"create",
+            "action2":"delete"
+        },
+        {
+            "img":"/assets/images/client5.jpg",
+            "name":"Ashton Cox",
+            "email":"xyz@email.com",
+            "status":"InActive",
+            "projectName":"Ios Api",
+            "action1":"create",
+            "action2":"delete"
+        },
+        {
+            "img":"/assets/images/client6.jpg",
+            "name":"Cara Stevens",
+            "email":"xyz@email.com",
+            "status":"Active",
+            "projectName":"Desktop App",
+            "action1":"create",
+            "action2":"delete"
+        }
+    ]
+}

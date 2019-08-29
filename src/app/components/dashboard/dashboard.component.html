@@ -1,4 +1,5 @@
-<div class="content" fxFlex=100 >
+<div class="content" fxFlex=100>
+  <!--*********************** Header of dashboard ****************************** -->
   <div class="body-header" fxLayout="row" fxLayoutAlign="start center">
     <div class="heading1">
       <h4>Dashboard</h4>
@@ -29,163 +30,242 @@
     </div>
 
   </div>
+
+  <!-- **************************   Four Card Charts ************************* -->
   <div class="cards" fxLayout="row wrap" >
-    <div class="card-list"  >
-      <mat-card class="card-size" >
-          <div class="card-body" >
-              <mat-card-title  >
-                  Total Income
-                </mat-card-title>
-                <mat-card-title>
-                    <span>
-                      $758
-                      <mat-icon style="color: green" >trending_up</mat-icon>
-                    </span>
-                </mat-card-title>
-          </div>
-          <div  >
-              <canvas id="barChart"  ></canvas>
-          </div>
-            
-      </mat-card>
-
-    </div>
-
-    <div class="card-list" >
-        <mat-card class="card-size" >
-          <div class="card-body">
-              <mat-card-title>
-                  Order Recieved
-                </mat-card-title>
-                <mat-card-title>
-                    <span>
-                      1025
-                      <mat-icon style="color: red" >trending_down</mat-icon>
-                    </span>
-                </mat-card-title>
-          </div>
-          <div>
-            <canvas id="lineChart"></canvas>
-          </div>
-          
-          
-        </mat-card>
-  
-    </div>
-    <div class="card-list" >
-          <mat-card class="card-size" >
-              <div class="card-body">
-                  <mat-card-title>
-                      Total Sales
-                    </mat-card-title>
-                    <mat-card-title>
-                        <span>
-                          956
-                          <mat-icon style="color: green" >trending_up</mat-icon>
-                        </span>
-                    </mat-card-title>
-              </div>
-              <div  >
-                  <canvas id="pieChart"  ></canvas>
-              </div>
-            
-          </mat-card>
-    
-    </div>
-
-
-    <div class="card-list" >
+    <div class="card-list">
       <mat-card class="card-size">
-       <div class="card-body">
+        <div class="card-body">
           <mat-card-title>
-              Total Active
-            </mat-card-title>
-            <mat-card-title>
-                <span>
-                  214
-                  <mat-icon style="color:red" >trending_down</mat-icon>
-                </span>
-            </mat-card-title>
-       </div>
-       <div>
+            Total Income
+          </mat-card-title>
+          <mat-card-title>
+            <span>
+              $758
+              <mat-icon style="color: green">trending_up</mat-icon>
+            </span>
+          </mat-card-title>
+        </div>
+        <div>
+          <canvas id="barChart"></canvas>
+        </div>
+
+      </mat-card>
+
+    </div>
+
+    <div class="card-list">
+      <mat-card class="card-size">
+        <div class="card-body">
+          <mat-card-title>
+            Order Recieved
+          </mat-card-title>
+          <mat-card-title>
+            <span>
+              1025
+              <mat-icon style="color: red">trending_down</mat-icon>
+            </span>
+          </mat-card-title>
+        </div>
+        <div>
+          <canvas id="lineChart"></canvas>
+        </div>
+
+
+      </mat-card>
+
+    </div>
+    <div class="card-list">
+      <mat-card class="card-size">
+        <div class="card-body">
+          <mat-card-title>
+            Total Sales
+          </mat-card-title>
+          <mat-card-title>
+            <span>
+              956
+              <mat-icon style="color: green">trending_up</mat-icon>
+            </span>
+          </mat-card-title>
+        </div>
+        <div>
+          <canvas id="pieChart"></canvas>
+        </div>
+
+      </mat-card>
+
+    </div>
+
+
+    <div class="card-list">
+      <mat-card class="card-size">
+        <div class="card-body">
+          <mat-card-title>
+            Total Active
+          </mat-card-title>
+          <mat-card-title>
+            <span>
+              214
+              <mat-icon style="color:red">trending_down</mat-icon>
+            </span>
+          </mat-card-title>
+        </div>
+        <div>
           <canvas id="lineChart1"></canvas>
-      </div>
-       
+        </div>
+
       </mat-card>
 
     </div>
   </div>
-  <div class="card-report" fxLayout="row wrap" fxLayoutGap="20px">
-    <div fxLayout="row" >
-        <mat-card class="report-size" fxLayoutGap="20px">
-            <div class="report-body">
-              <div fxLayout="row" >
-                <div class="title">
-                    <mat-card-title>
-                        Recent Report
-                      </mat-card-title>
-                </div>
-                <div class="list" >
-                    <button mat-button [matMenuTriggerFor]="mainlist">
-                        <mat-icon>more_vert</mat-icon>
-                      </button>
-                  
-                      <mat-menu #mainlist="matMenu">
-                        <button  mat-menu-item >Action</button>
-                        <button  mat-menu-item >Another action</button>
-                        <button  mat-menu-item >Something else here</button>
-                        
-                  
-                      </mat-menu>
-                </div>
-                
-              </div>
-              <div class="report2">
-                  <canvas id="reportChart"></canvas>
-    
-              </div>
-                  
-              
+
+  <!-- ******************************   Report charts  *********************************** -->
+  <div class="card-report" fxLayout="row wrap" fxLayoutGap="20px" >
+    <div fxLayout="row" class="card1" >
+      <mat-card class="report-size" fxLayoutGap="20px">
+        <div class="report-body">
+          <div fxLayout="row" >
+            <div class="title">
+              <mat-card-title>
+                Recent Report
+              </mat-card-title>
             </div>
-          </mat-card>
-    </div>
-    
-    <div fxLayout="row" >
-        <mat-card class="report-size" >
-            <div class="report-body">
-              <div fxLayout="row" >
-                <div class="title">
-                    <mat-card-title>
-                        Recent Report
-                      </mat-card-title>
-                </div>
-                <div class="list" >
-                    <button mat-button [matMenuTriggerFor]="mainlist">
-                        <mat-icon>more_vert</mat-icon>
-                      </button>
-                  
-                      <mat-menu #mainlist="matMenu">
-                        <button  mat-menu-item >Action</button>
-                        <button  mat-menu-item >Another action</button>
-                        <button  mat-menu-item >Something else here</button>
-                        
-                  
-                      </mat-menu>
-                </div>
-                
-              </div>
-              <div class="report2">
-                  <canvas id="radarChart"></canvas>
-              </div>
-              
+            <div class="list">
+              <button mat-button [matMenuTriggerFor]="mainlist">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+
+              <mat-menu #mainlist="matMenu">
+                <button mat-menu-item>Action</button>
+                <button mat-menu-item>Another action</button>
+                <button mat-menu-item>Something else here</button>
+
+
+              </mat-menu>
             </div>
-          </mat-card>
+
+          </div>
+          <div class="report2">
+            <canvas id="reportChart"></canvas>
+
+          </div>
+
+
+        </div>
+      </mat-card>
     </div>
-    
+
+    <div fxLayout="row" class="card2"  >
+      <mat-card class="report-size">
+        <div class="report-body">
+          <div fxLayout="row">
+            <div class="title">
+              <mat-card-title>
+                Recent Report
+              </mat-card-title>
+            </div>
+            <div class="list">
+              <button mat-button [matMenuTriggerFor]="mainlist">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+
+              <mat-menu #mainlist="matMenu">
+                <button mat-menu-item>Action</button>
+                <button mat-menu-item>Another action</button>
+                <button mat-menu-item>Something else here</button>
+
+
+              </mat-menu>
+            </div>
+
+          </div>
+          <div class="report2">
+            <canvas id="radarChart"></canvas>
+          </div>
+
+        </div>
+      </mat-card>
+    </div>
+
 
   </div>
 
+  <!-- ************************ Card Tabels *************************** -->
+  <div class="card-table" fxLayout="row">
+    <div class="row">
+      <mat-card class="client-size" >
+        <div class="table-body">
+
+
+          <div fxLayout="row">
+            <div class="title">
+              <mat-card-title>
+                Client Details
+              </mat-card-title>
+            </div>
+            <div class="list">
+              <button mat-button [matMenuTriggerFor]="mainlist">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+
+              <mat-menu #mainlist="matMenu">
+                <button mat-menu-item>Action</button>
+                <button mat-menu-item>Another action</button>
+                <button mat-menu-item>Something else here</button>
+
+
+              </mat-menu>
+            </div>
+        </div>
+        <div class="table-contents">
+            <div class="table-responsive">
+                <div class="table center-aligned-table">
+                  <thead>
+                    <tr class="bg-light">
+                      <th class="border-bottom-0" >#</th>
+                      <th class="border-bottom-0">Name</th>
+                      <th class="border-bottom-0">Email</th>
+                      <th class="border-bottom-0">Status</th>
+                      <th class="border-bottom-0">Project Name</th>
+                      <th class="border-bottom-0">Action</th>
+                       
   
+                    </tr>
+                  </thead>
+                  <tbody *ngFor='let items of tableData'>
+                    <tr>
+                      <td><img src="{{items.img}}" class="img-sm rounded-circle"></td>
+                      <td>{{items.name}}</td>
+                      <td>{{items.email}}</td>
+                      <td><label *ngIf="items.status == 'Active'" class="badge badge-success">{{items.status}}</label>
+                          <label *ngIf="items.status == 'InActive'" class="badge badge-danger">{{items.status}}
+                      </label></td>
+                      <td>{{items.projectName}}</td>
+                      <td> <div fxLayout="row" fxLayoutGap="10px" >
+                              <mat-icon  >{{items.action1}}</mat-icon>
+                              <mat-icon>{{items.action2}}</mat-icon>
+                            </div>
+                          
+                      </td>
+                    </tr>
+                  </tbody>
+  
+                </div>
+  
+  
+              </div>
+
+
+
+          
+        </div>
+        </div>
+      </mat-card>
+
+    </div>
+
+  </div>
+
 
 
 

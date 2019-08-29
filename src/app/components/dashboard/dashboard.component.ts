@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Chart} from 'chart.js';
+import {HttpService} from '../../services/HttpServive/http.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -14,10 +15,15 @@ export class DashboardComponent implements OnInit {
   reportChart1=[];
   radarChart=[];
 
-  constructor() { }
+  tableData;
+  columns=["#","Name","Status","ProjectName","Action"];
+
+  constructor(public jsonService:HttpService) { }
 
   ngOnInit() {
+    this.getTableData();
 
+                // BarChart
     this.BarChart=new Chart('barChart',{
       type:'bar',
       data:{
@@ -51,7 +57,7 @@ export class DashboardComponent implements OnInit {
       }
       });
 
-
+          // Pie Chart
       this.PieChart = new Chart('pieChart', {
         type: 'pie',
       data: {
@@ -101,7 +107,7 @@ export class DashboardComponent implements OnInit {
       }
       });
 
-
+        // LineChart
       this.lineChart=new Chart('lineChart',{
         type:'line',
         data:{
@@ -136,7 +142,7 @@ export class DashboardComponent implements OnInit {
         }
         });
 
-
+          // LineChat2
         this.lineChart1=new Chart('lineChart1',{
           type:'line',
           data:{
@@ -171,7 +177,7 @@ export class DashboardComponent implements OnInit {
           }
           });
 
-    
+            // Report Chart
           this.reportChart1=new Chart('reportChart',{
             type:'line',
             data:{
@@ -227,7 +233,7 @@ export class DashboardComponent implements OnInit {
             }
             });
 
-
+              // Radar Chart
             this.radarChart=new Chart('radarChart',{
               type:'radar',
               data:{
@@ -280,5 +286,14 @@ export class DashboardComponent implements OnInit {
               });
 
   }
+  getTableData(){
+    this.jsonService.getJsonData().subscribe(data=>{
+      console.log("data..!",data.table_data);
+      this.tableData=data.table_data;      
+
+    })
+
+    }
+  
 
 }

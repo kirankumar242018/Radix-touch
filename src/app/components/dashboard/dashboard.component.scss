@@ -44,7 +44,7 @@
     
 }
 .card-size{
-    height:150px;
+    height:160px;
     width:250px;
     border-radius: 15px;
 }
@@ -91,9 +91,68 @@
 }
 .card-report{
     margin-left:25px;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
+
 .title{
     width:100%;
     max-width: 90%;
+}
+.client-size{
+    height:500px;
+    width:750px;
+    border-radius: 15px;
+}
+.card1{
+    padding-bottom: 20px;
+}
+.card-table{
+    margin-left:25px;
+    margin-bottom:20px;
+}
+.table-responsive{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+.bg-light{
+    background-color: #f3f5f6;
+}
+.table thead th {
+    border-top: 0;
+    border-bottom-width: 1px;
+    font-weight: 600;
+    color: #223C61;
+    vertical-align: bottom;
+    border-bottom: 2px solid #d5dcec;
+}
+.table th{
+    vertical-align: middle;
+    font-size: 0.8rem;
+    line-height: 1;
+    padding: 23px 30px;
+}
+.rounded-circle {
+    border-radius: 50% ;
+}
+.badge-success{
+    border: 1px solid #4CCEAC;
+    color: #fff;
+}
+.first-icon{
+    margin-left:10px;
+}
+
+// ::ng-deep .mat-dialog-container{
+//     padding:0px;
+// }
+
+::ng-deep .card-body{
+    padding: 0.5rem;
+}
+::ng-deep .mat-card{
+    padding: 14px !important;
+}
+::ng-deep .mat-card-title{
+    margin-bottom: 0px !important;
 }
