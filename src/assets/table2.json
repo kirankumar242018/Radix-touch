@@ -1,0 +1,47 @@
+{
+    "table_data":[
+        {
+            "productName":"iPhoneX",
+            "image1":"/assets/images/client1.jpg",
+            "image2":"/assets/images/client2.jpg",
+            "image3":"/assets/images/client3.jpg",
+            "Cost":"$8999"
+        },
+        {
+            "productName":"Pixel2",
+            "image1":"/assets/images/client1.jpg",
+            "image2":"/assets/images/client2.jpg",
+            "image3":"/assets/images/client3.jpg",
+            "Cost":"$5550"
+        },
+        {
+            "productName":"onePlus",
+            "image1":"/assets/images/client1.jpg",
+            "image2":"/assets/images/client2.jpg",
+            "image3":"/assets/images/client3.jpg",
+            "Cost":"$9000"
+        },
+        {
+            "productName":"Galaxy",
+            "image1":"/assets/images/client1.jpg",
+            "image2":"/assets/images/client2.jpg",
+            "image3":"/assets/images/client3.jpg",
+            "Cost":"$7500"
+        },
+        {
+            "productName":"Moto Z2",
+            "image1":"/assets/images/client1.jpg",
+            "image2":"/assets/images/client2.jpg",
+            "image3":"/assets/images/client3.jpg",
+            "Cost":"$8500"
+        },
+        {
+            "productName":"iPhoneX",
+            "image1":"/assets/images/client1.jpg",
+            "image2":"/assets/images/client2.jpg",
+            "image3":"/assets/images/client3.jpg",
+            "Cost":"$8999"
+        }
+        
+    ]
+}

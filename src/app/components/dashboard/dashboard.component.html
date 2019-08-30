@@ -1,6 +1,6 @@
 <div class="content" fxFlex=100>
   <!--*********************** Header of dashboard ****************************** -->
-  <div class="body-header" fxLayout="row" fxLayoutAlign="start center">
+  <div class="body-header" fxLayout="row" fxLayout.xs="row" fxLayout.md="row" fxLayout.sm="row" >
     <div class="heading1">
       <h4>Dashboard</h4>
     </div>
@@ -14,7 +14,7 @@
     </div>
     <div class="home">
       <span>
-        <h4>Home</h4>
+        <h6>Home</h6>
       </span>
 
     </div>
@@ -24,7 +24,7 @@
     </div>
     <div class="dashboard">
       <span>
-        <h4>Dashboard</h4>
+        <h6>Dashboard</h6>
       </span>
 
     </div>
@@ -32,7 +32,7 @@
   </div>
 
   <!-- **************************   Four Card Charts ************************* -->
-  <div class="cards" fxLayout="row wrap" >
+  <div class="cards" fxLayout="row wrap"  fxLayoutGap="12px" fxLayout.xs="row wrap" fxLayout.md="column" fxLayout.sm="column" >
     <div class="card-list">
       <mat-card class="card-size">
         <div class="card-body">
@@ -120,7 +120,7 @@
   </div>
 
   <!-- ******************************   Report charts  *********************************** -->
-  <div class="card-report" fxLayout="row wrap" fxLayoutGap="20px" >
+  <div class="card-report" fxLayout="row wrap" fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
     <div fxLayout="row" class="card1" >
       <mat-card class="report-size" fxLayoutGap="20px">
         <div class="report-body">
@@ -191,8 +191,8 @@
   </div>
 
   <!-- ************************ Card Tabels *************************** -->
-  <div class="card-table" fxLayout="row">
-    <div class="row">
+  <div class="card-table" fxLayout="row"  fxLayoutGap="30px" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" >
+    <div class="row" fxLayout.xs="column" >
       <mat-card class="client-size" >
         <div class="table-body">
 
@@ -205,7 +205,7 @@
             </div>
             <div class="list">
               <button mat-button [matMenuTriggerFor]="mainlist">
-                <mat-icon>more_vert</mat-icon>
+                <mat-icon>twitter</mat-icon>
               </button>
 
               <mat-menu #mainlist="matMenu">
@@ -242,8 +242,8 @@
                       </label></td>
                       <td>{{items.projectName}}</td>
                       <td> <div fxLayout="row" fxLayoutGap="10px" >
-                              <mat-icon  >{{items.action1}}</mat-icon>
-                              <mat-icon>{{items.action2}}</mat-icon>
+                              <button class="btn" ><mat-icon  >{{items.action1}}</mat-icon></button>
+                              <button class="btn" ><mat-icon>{{items.action2}}</mat-icon></button>
                             </div>
                           
                       </td>
@@ -262,6 +262,110 @@
         </div>
       </mat-card>
 
+    </div>
+
+    <div class="row" >
+      <mat-card class="client-size1" >
+        <div class="table-body">
+
+
+          <div fxLayout="row">
+            <div class="title">
+              <mat-card-title>
+                New Projects
+              </mat-card-title>
+            </div>
+            <div class="list">
+              <button mat-button [matMenuTriggerFor]="mainlist">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+
+              <mat-menu #mainlist="matMenu">
+                <button mat-menu-item>Action</button>
+                <button mat-menu-item>Another action</button>
+                <button mat-menu-item>Something else here</button>
+
+
+              </mat-menu>
+            </div>
+        </div>
+        <div class="table-contents">
+            <div class="table-responsive">
+                <div class="table center-aligned-table">
+                  <thead>
+                    <tr class="bg-light">
+                      <th class="border-bottom-0" >Product</th>
+                      <th class="border-bottom-0">Emplyess</th>
+                      <th class="border-bottom-0">Cost</th>
+                    </tr>
+                  </thead>
+                  <tbody *ngFor='let items of projectTableData'>
+                    <tr>
+                      <td>{{items.productName}}</td>
+                      <td  >
+                        <img src="{{items.image1}}"  class="img-sm rounded-circle">
+                        <img src="{{items.image2}}" style="margin-left: -14px;" class="img-sm rounded-circle">
+                        <img src="{{items.image3}}" style="margin-left: -14px;" class="img-sm rounded-circle">
+                        <span class="badge">+4</span>
+                      </td>
+                      
+                      <td>{{items.Cost}}</td>
+                    
+                    </tr>
+                  </tbody>
+  
+                </div>
+  
+  
+              </div>
+
+
+
+          
+        </div>
+        </div>
+      </mat-card>
+
+    </div>
+
+  </div>
+  <!-- *************************** Social Login *************************************** -->
+  <div class="social-card" fxLayout="row"  fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
+    <div class="card1" >
+      <mat-card class="social-size" fxLayout="column" >
+          <div class="twitter" >
+              <img src="../../../assets/images/twitter.jpg" width="40px" height="40px" >
+              <h4>Twitter</h4>
+              <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
+              <a href="" >Learn More</a>
+            </div>
+          
+      </mat-card>
+       
+    </div>
+    <div class="card2" >
+        <mat-card class="social-size" fxLayout="column" >
+            <div class="twitter" >
+                <img src="../../../assets/images/instagram.jpeg" width="40px" height="40px" >
+                <h4>Instagram</h4>
+                <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
+                <a href="" >Learn More</a>
+              </div>
+            
+        </mat-card>
+         
+    </div>
+    <div class="card1" >
+        <mat-card class="social-size" fxLayout="column" >
+            <div class="twitter" >
+                <img src="../../../assets/images/facebook.png" width="40px" height="40px" >
+                <h4>Facebook</h4>
+                <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
+                <a href="" >Learn More</a>
+              </div>
+            
+        </mat-card>
+         
     </div>
 
   </div>

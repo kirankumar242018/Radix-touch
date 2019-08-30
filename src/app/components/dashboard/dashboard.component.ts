@@ -16,12 +16,15 @@ export class DashboardComponent implements OnInit {
   radarChart=[];
 
   tableData;
+  projectTableData;
+
   columns=["#","Name","Status","ProjectName","Action"];
 
   constructor(public jsonService:HttpService) { }
 
   ngOnInit() {
     this.getTableData();
+    this.getProjectData();
 
                 // BarChart
     this.BarChart=new Chart('barChart',{
@@ -294,6 +297,12 @@ export class DashboardComponent implements OnInit {
     })
 
     }
+  getProjectData(){
+    this.jsonService.getJsonTableData().subscribe(data=>{
+      console.log("project data..!",data.table_data);
+      this.projectTableData = data.table_data;
+    })
+  }  
   
 
 }
