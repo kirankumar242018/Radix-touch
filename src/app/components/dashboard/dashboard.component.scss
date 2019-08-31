@@ -111,7 +111,7 @@
     max-width: 90%;
 }
 .client-size{
-    height:530px;
+    //height:530px;
     width:775px;
     border-radius: 15px;
 }
@@ -200,6 +200,43 @@ span.badge {
     width: 100%;
    text-align:center;
 }
+.custom-size{
+    //height:250px;
+    width:378px;
+    border-radius: 15px;
+}
+.customer-review{
+    margin-top:5px;
+    margin-left:30px;
+    margin-bottom:15px;
+}
+.score{
+    font-size:24px;
+    color:#f5d742;
+    width: 100%;
+    text-align:center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 500;
+}
+.progres-bar{
+    margin-top:10px;
+    margin-bottom: 10px;
+    //background-color: linear-gradient(45deg,#9ce89d,#cdfa7e) !important;
+    background-image: linear-gradient(45deg,#9ce89d, #cdfa7e);
+}
+.per-btn{
+    border:none transparent;
+    outline: none;
+    border-radius: 10px;
+    color:#edf1f5;
+    background-color: #428df5;
+    font-weight: 100;
+    font-size:14px;
+}
+// .progres-bar1{
+//     background: linear-gradient(45deg,#9ce89d,#cdfa7e) !important;
+// }
 ::ng-deep .card-body{
     padding: 0.5rem;
 }
@@ -209,3 +246,89 @@ span.badge {
 ::ng-deep .mat-card-title{
     margin-bottom: 0px !important;
 }
+.progres-bar1{
+    ::ng-deep .mat-progress-bar-fill::after {
+        //background-color: green;
+        background: linear-gradient(40deg,#9ce89d,#cdfa7e) !important;
+    }
+    
+    ::ng-deep .mat-progress-bar-buffer {
+        //background: #E4E8EB;
+       
+        background-color: #d2d6d3;
+
+    }
+}
+.progres-bar2{
+    ::ng-deep .mat-progress-bar-fill::after {
+        //background-color: green;
+        background: linear-gradient(40deg,#759bff,#843cf6) !important;
+    }
+    
+    ::ng-deep .mat-progress-bar-buffer {
+        //background: #E4E8EB;
+       
+        background-color: #d2d6d3;
+
+    }
+}
+.progres-bar3{
+    ::ng-deep .mat-progress-bar-fill::after {
+        //background-color: green;
+        background: linear-gradient(40deg,#ffc480,#ff763b) !important;
+    }
+    
+    ::ng-deep .mat-progress-bar-buffer {
+        //background: #E4E8EB;
+       
+        background-color: #d2d6d3;
+
+    }
+}
+.progres-bar4{
+    ::ng-deep .mat-progress-bar-fill::after {
+        //background-color: green;
+        background: linear-gradient(40deg,#72c2ff,#86f0ff) !important;
+    }
+    
+    ::ng-deep .mat-progress-bar-buffer {
+        //background: #E4E8EB;
+       
+        background-color: #d2d6d3;
+
+    }
+}
+.progres-bar3{
+    ::ng-deep .mat-progress-bar-fill::after {
+        //background-color: green;
+        background: linear-gradient(40deg, #ffc480,#ff763b ) !important;
+    }
+   
+    ::ng-deep .mat-progress-bar-buffer {
+        //background: #E4E8EB;
+       
+        background-color: #d2d6d3;
+
+    }
+}
+    
+.progres-bar5{
+    ::ng-deep .mat-progress-bar-fill::after {
+        //background-color: green;
+        background: linear-gradient(40deg,#fc5286,#fbaaa2 ) !important;
+    }
+   
+    ::ng-deep .mat-progress-bar-buffer {
+        //background: #E4E8EB;
+       
+        background-color: #d2d6d3;
+
+    }
+}
+// /deep/ .mat-progress-bar-fill::after {
+//     background-color: green;
+// }
+
+// /deep/ .mat-progress-bar-buffer {
+//     background: #E4E8EB;
+// }

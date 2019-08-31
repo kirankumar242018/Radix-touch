@@ -17,6 +17,7 @@ export class DashboardComponent implements OnInit {
 
   tableData;
   projectTableData;
+  color_code="red";
 
   columns=["#","Name","Status","ProjectName","Action"];
 

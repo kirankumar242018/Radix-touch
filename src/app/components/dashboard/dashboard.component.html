@@ -32,7 +32,7 @@
   </div>
 
   <!-- **************************   Four Card Charts ************************* -->
-  <div class="cards" fxLayout="row wrap"  fxLayoutGap="12px" fxLayout.xs="row wrap" fxLayout.md="column" fxLayout.sm="column" >
+  <div class="cards" fxLayout="row wrap"  fxLayoutGap="12px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
     <div class="card-list">
       <mat-card class="card-size">
         <div class="card-body">
@@ -205,7 +205,7 @@
             </div>
             <div class="list">
               <button mat-button [matMenuTriggerFor]="mainlist">
-                <mat-icon>twitter</mat-icon>
+                <mat-icon>more_vert</mat-icon>
               </button>
 
               <mat-menu #mainlist="matMenu">
@@ -330,7 +330,7 @@
 
   </div>
   <!-- *************************** Social Login *************************************** -->
-  <div class="social-card" fxLayout="row"  fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
+  <div class="social-card" fxLayout="row"  fxLayoutGap="25px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
     <div class="card1" >
       <mat-card class="social-size" fxLayout="column" >
           <div class="twitter" >
@@ -367,6 +367,134 @@
         </mat-card>
          
     </div>
+
+  </div>
+
+  <!-- *************************** Customer Review *************************************** -->
+
+  <div class="customer-review" fxLayout="row"  fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
+    <div class="card1" >
+      <mat-card class="custom-size" fxLayout="column" >
+          <div class="custom-body">
+            <div fxLayout="row" >
+              <div class="title">
+                <mat-card-title>
+                  Earning Source
+                </mat-card-title>
+              </div>
+              <div class="list">
+                <button mat-button [matMenuTriggerFor]="mainlist">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+  
+                <mat-menu #mainlist="matMenu">
+                  <button mat-menu-item>Action</button>
+                  <button mat-menu-item>Another action</button>
+                  <button mat-menu-item>Something else here</button>
+  
+  
+                </mat-menu>
+              </div>
+  
+            </div>
+            <div class="score" >
+              <p>$90,808</p>
+            </div>
+            <div class="row1">
+              <div fxLayout="row" >
+                <div class="title">
+                  <mat-card-title>
+                    envanto.com
+                  </mat-card-title>
+                </div>
+                <div  >
+                  <button class="per-btn" >17%</button>
+                </div>
+                
+              </div>
+              <div class="progres-bar1" >
+                <mat-progress-bar style="height:8px;" mode="determinate" value="17"  ></mat-progress-bar>
+  
+              </div>
+            </div>
+
+            <div class="row2">
+              <div fxLayout="row" >
+                <div class="title">
+                  <mat-card-title>
+                    google.com
+                  </mat-card-title>
+                </div>
+                <div  >
+                  <button class="per-btn" >27%</button>
+                </div>
+                
+              </div>
+              <div class="progres-bar2" >
+                <mat-progress-bar style="height:8px;" mode="determinate" value="27" [color]="" ></mat-progress-bar>
+  
+              </div>
+            </div>
+            
+            <div class="row2">
+              <div fxLayout="row" >
+                <div class="title">
+                  <mat-card-title>
+                    yahoo.com
+                  </mat-card-title>
+                </div>
+                <div  >
+                  <button class="per-btn" >25%</button>
+                </div>
+                
+              </div>
+              <div class="progres-bar3" >
+                <mat-progress-bar style="height:8px;" mode="determinate" value="25" [color]="" ></mat-progress-bar>
+  
+              </div>
+            </div>
+
+            <div class="row2">
+              <div fxLayout="row" >
+                <div class="title">
+                  <mat-card-title>
+                    store
+                  </mat-card-title>
+                </div>
+                <div  >
+                  <button class="per-btn" >18%</button>
+                </div>
+                
+              </div>
+              <div class="progres-bar4" >
+                <mat-progress-bar style="height:8px;" mode="determinate" value="18" [color]="" ></mat-progress-bar>
+  
+              </div>
+            </div>
+
+            <div class="row2">
+              <div fxLayout="row" >
+                <div class="title">
+                  <mat-card-title>
+                    Others
+                  </mat-card-title>
+                </div>
+                <div  >
+                  <button class="per-btn" >13%</button>
+                </div>
+                
+              </div>
+              <div class="progres-bar5" >
+                <mat-progress-bar style="height:8px;"  mode="determinate" value="13" [color]="color_code" ></mat-progress-bar>
+  
+              </div>
+            </div>
+          </div>
+          
+      </mat-card>
+       
+    </div>
+
 
   </div>
 
