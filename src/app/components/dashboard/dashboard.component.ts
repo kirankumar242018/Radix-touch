@@ -17,6 +17,7 @@ export class DashboardComponent implements OnInit {
 
   tableData;
   projectTableData;
+  stockData;
   color_code="red";
 
   columns=["#","Name","Status","ProjectName","Action"];
@@ -26,7 +27,8 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.getTableData();
     this.getProjectData();
-
+    this.getStockData();
+    //this.BarChart;
                 // BarChart
     this.BarChart=new Chart('barChart',{
       type:'bar',
@@ -187,7 +189,7 @@ export class DashboardComponent implements OnInit {
             data:{
             labels:["Mon","Tues","Wed","Thurs","Fri","Sat","Sun"],
             datasets:[{
-            label:"Product",
+            label:"Products",
             data:[24,18,16,18,24,36,28],
             fill:true,
             lineTension:0.3,
@@ -244,7 +246,7 @@ export class DashboardComponent implements OnInit {
               labels:["Mon","Tues","Wed","Thurs","Fri","Sat","Sun"],
               datasets:[{
               
-              label: "Product",
+              label: "Products",
               data:[52,25,59,90,81,60,82],
               fill:true,
               lineTension:0.1,
@@ -302,6 +304,12 @@ export class DashboardComponent implements OnInit {
     this.jsonService.getJsonTableData().subscribe(data=>{
       console.log("project data..!",data.table_data);
       this.projectTableData = data.table_data;
+    })
+  }
+  getStockData(){
+    this.jsonService.getJsonStockData().subscribe(data=>{
+      console.log("stock data..!",data.stock_data);
+      this.stockData = data.stock_data;
     })
   }  
   

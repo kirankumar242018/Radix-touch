@@ -7,7 +7,7 @@
 
     <div class="material-icons">
       <span>
-        <mat-icon>house</mat-icon>
+        <mat-icon >house</mat-icon>
         <mat-icon>chevron_right</mat-icon>
       </span>
 
@@ -33,13 +33,14 @@
 
   <!-- **************************   Four Card Charts ************************* -->
   <div class="cards" fxLayout="row wrap"  fxLayoutGap="12px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
-    <div class="card-list">
+    <div class="card-list" >
       <mat-card class="card-size">
         <div class="card-body">
-          <mat-card-title>
-            Total Income
+          <mat-card-title class="title">
+            
+                Total Income
           </mat-card-title>
-          <mat-card-title>
+          <mat-card-title  class="value">
             <span>
               $758
               <mat-icon style="color: green">trending_up</mat-icon>
@@ -47,7 +48,7 @@
           </mat-card-title>
         </div>
         <div>
-          <canvas id="barChart"></canvas>
+          <canvas id=barChart></canvas>
         </div>
 
       </mat-card>
@@ -57,10 +58,10 @@
     <div class="card-list">
       <mat-card class="card-size">
         <div class="card-body">
-          <mat-card-title>
+          <mat-card-title class="title">
             Order Recieved
           </mat-card-title>
-          <mat-card-title>
+          <mat-card-title class="value">
             <span>
               1025
               <mat-icon style="color: red">trending_down</mat-icon>
@@ -78,10 +79,10 @@
     <div class="card-list">
       <mat-card class="card-size">
         <div class="card-body">
-          <mat-card-title>
+          <mat-card-title class="title">
             Total Sales
           </mat-card-title>
-          <mat-card-title>
+          <mat-card-title class="value">
             <span>
               956
               <mat-icon style="color: green">trending_up</mat-icon>
@@ -100,10 +101,10 @@
     <div class="card-list">
       <mat-card class="card-size">
         <div class="card-body">
-          <mat-card-title>
+          <mat-card-title class="title" >
             Total Active
           </mat-card-title>
-          <mat-card-title>
+          <mat-card-title class="value" >
             <span>
               214
               <mat-icon style="color:red">trending_down</mat-icon>
@@ -126,9 +127,14 @@
         <div class="report-body">
           <div fxLayout="row" >
             <div class="title">
-              <mat-card-title>
-                Recent Report
-              </mat-card-title>
+              <div>
+                    <strong style="color: #353c48 !important;">
+                        Recent 
+                    </strong>
+                    Report
+              </div>
+                
+              
             </div>
             <div class="list">
               <button mat-button [matMenuTriggerFor]="mainlist">
@@ -160,9 +166,14 @@
         <div class="report-body">
           <div fxLayout="row">
             <div class="title">
-              <mat-card-title>
-                Recent Report
-              </mat-card-title>
+             <div>
+               <strong style="color: #353c48 !important;">
+                  Recent
+               </strong>
+                Report
+             </div>
+                
+              
             </div>
             <div class="list">
               <button mat-button [matMenuTriggerFor]="mainlist">
@@ -199,9 +210,12 @@
 
           <div fxLayout="row">
             <div class="title">
-              <mat-card-title>
-                Client Details
-              </mat-card-title>
+                <div>
+                    <strong style="color: #353c48 !important;">
+                       Clients
+                    </strong>
+                     Details
+                  </div>
             </div>
             <div class="list">
               <button mat-button [matMenuTriggerFor]="mainlist">
@@ -271,9 +285,12 @@
 
           <div fxLayout="row">
             <div class="title">
-              <mat-card-title>
-                New Projects
-              </mat-card-title>
+                <div>
+                    <strong style="color: #353c48 !important;">
+                       New
+                    </strong>
+                     Projects
+                  </div>
             </div>
             <div class="list">
               <button mat-button [matMenuTriggerFor]="mainlist">
@@ -378,9 +395,12 @@
           <div class="custom-body">
             <div fxLayout="row" >
               <div class="title">
-                <mat-card-title>
-                  Earning Source
-                </mat-card-title>
+                  <div>
+                      <strong style="color: #353c48 !important;">
+                         Earning
+                      </strong>
+                       Source
+                    </div>
               </div>
               <div class="list">
                 <button mat-button [matMenuTriggerFor]="mainlist">
@@ -494,11 +514,130 @@
       </mat-card>
        
     </div>
+    <div class="card2">
+        <mat-card class="custom-size2" >
+          <div  class="custom-body2" > 
+            <div fxLayout="row" >
+              <div class="title">
+                  <div>
+                    
+                        <strong style="color: #353c48 !important;">
+                            Customer
+                         </strong>
+                          Review
+                    
+                     
+                    </div>
+              </div>
+              <div class="list">
+                <button mat-button [matMenuTriggerFor]="mainlist">
+                  <mat-icon>more_vert</mat-icon>
+                </button>
+  
+                <mat-menu #mainlist="matMenu">
+                  <button mat-menu-item>Action</button>
+                  <button mat-menu-item>Another action</button>
+                  <button mat-menu-item>Something else here</button>
+  
+  
+                </mat-menu>
+              </div>
+  
+            </div>
+            <div class="custom-ratings" fxLayout="row">
+              <div class="custom-image">
+                  <img src="../../../assets/images/client1.jpg" class="img-sm rounded-circle">
+               
+              </div>
+              <div class="custom-stars" fxLayout="column" >
+                <div>
+                    <h6 style>Alis Smith
+                    <span class="float-right">a week ago</span> </h6>
+                </div>
+                <div>
+                    <mat-icon style="color:green" >star</mat-icon>
+                    <mat-icon style="color:green">star</mat-icon>
+                    <mat-icon style="color:green">star</mat-icon>
+                    <mat-icon style="color:green">star_half</mat-icon>
+                    <mat-icon style="color:green">star_border</mat-icon>
+
+                </div>
+                
+
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rutrum ex, at ornare mi. 
+                    In quis scelerisque dui, eget rhoncus orci. 
+                    Fusce et sodales ipsum. Nam id nunc euismod, aliquet arcu quis, mattis nisi.
+                  </p>
+                </div>
+                <div>
+                    <mat-icon style="color:blue" >thumb_up_alt</mat-icon>
+                    <mat-icon style="color:red;margin-left: 10px;">thumb_down_alt</mat-icon>
+                </div>
+              </div>
+             
+              
+              
+            </div>
+            <div class="custom-ratings" fxLayout="row">
+              <div class="custom-image">
+                  <img src="../../../assets/images/client2.jpg" class="img-sm rounded-circle">
+               
+              </div>
+              <div class="custom-stars" fxLayout="column" >
+                <div>
+                    <h6 style>Jhon Dio
+                    <span class="float-right">a week ago</span> </h6>
+                </div>
+                <div>
+                    <mat-icon style="color:red" >star</mat-icon>
+                    <mat-icon style="color:red">star_half</mat-icon>
+                    <mat-icon style="color:red">star_border</mat-icon>
+                    <mat-icon style="color:red">star_border</mat-icon>
+                    <mat-icon style="color:red">star_border</mat-icon>
+
+                </div>
+                
+
+                <div>
+                  <p>
+                    Nam quis ligula est. Nunc sed risus non turpis tristique tempor. Ut sollicitudin faucibus magna nec gravida. 
+                    Suspendisse ullamcorper justo vel porta imperdiet. Nunc nec ipsum vel augue placerat faucibus.
+                  </p>
+                </div>
+                <div>
+                    <mat-icon style="color:blue" >thumb_up_alt</mat-icon>
+                    <mat-icon style="color:red;margin-left: 10px;">thumb_down_alt</mat-icon>
+                </div>
+              </div>
+              
+             
+              
+              
+            </div>
+            <div class="view-review">
+                <a href="#" >View all Customer Reviews </a>
+
+              </div>
+           
+          
+                  
+                
+             
+
+
+
+
+          </div>
+        </mat-card>
+    </div>
 
 
   </div>
 
 
+  
 
 
 </div>

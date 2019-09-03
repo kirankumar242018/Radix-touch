@@ -1,6 +1,11 @@
-// .content{
-//     padding-left:25px;
-// }
+@import '../../../scss/mixins.scss';
+
+
+
+.content{
+    padding-left:25px;
+    padding-top: 15px;
+}
 
 
 
@@ -30,7 +35,8 @@
     padding-right: 5px;
     font-size: 12px;
     font-weight: 300;
-    color: rgb(27, 24, 24);
+    //color: rgb(27, 24, 24);
+    color: #353c48 !important;
 }
 // .arrow{
 //     margin-top:5px;
@@ -60,41 +66,30 @@
     width:275px;
     border-radius: 15px;
 }
+.title{
+    font-size:18px;
+}
+.value{
+    font-weight: bold;
+}
 #barChart{
-    display: block;
-    margin: auto !important;
-
-    height: 50px !important;
-    width:50px !important;
+    @include graph;
+    
 }
 #pieChart{
-    display: block;
-    margin: auto !important;
 
-    height: 50px !important;
-    width:75px !important;
+    @include graph;
+    
 }
 #lineChart{
-    display: block;
-    margin: auto !important;
-
-    height: 50px !important;
-    width:75px !important;
+    @include graph;
+    
 }
 #lineChart1{
-    display: block;
-    margin: auto !important;
-
-    height: 50px !important;
-    width:75px !important;
+    @include graph;
+   
 }
-// .radarChart{
-//     display: block;
-//     margin: auto !important;
 
-//     height: 50px !important;
-//     width:75px !important;
-// }
 
 .report-size{
     height:350px;
@@ -205,10 +200,45 @@ span.badge {
     width:378px;
     border-radius: 15px;
 }
+.custom-size2{
+    width:780px;
+    border-radius: 15px;
+}
 .customer-review{
     margin-top:5px;
     margin-left:30px;
     margin-bottom:15px;
+}
+.row2, .row1{
+    margin-bottom:10px;
+}
+.custom-image{
+    padding-left: 20px;
+    padding-top: 18px;
+}
+.custom-ratings{
+    margin-top:25px;
+}
+.float-right{
+    //text-align: right;
+    position:relative;
+    //left:495px;
+    color: #919aa3 !important; //used for text muted
+    margin-bottom:10px; 
+}
+// .m-r-10{
+//     margin-right:10px;
+// }
+// .text-muted{
+//     color: #919aa3 !important;
+//     margin-bottom:10px; 
+// }
+.custom-stars{
+    padding:15px;
+}
+.view-review{
+    width: 100%;
+   text-align:center;
 }
 .score{
     font-size:24px;

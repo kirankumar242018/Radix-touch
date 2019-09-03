@@ -1,0 +1,28 @@
+{
+    "stock_data":[
+        {
+            "title":"Total Income",
+            "value":"$758",
+            "icon":"trending_up",
+            "graph":"barChart"
+        },
+        {
+            "title":"Order Received",
+            "value":"1025",
+            "icon":"trending_down",
+            "graph":"lineChart"
+        },
+        {
+            "title":"Total Sales",
+            "value":"956",
+            "icon":"trending_up",
+            "graph":"pieChart"
+        },
+        {
+            "title":"Total Active",
+            "value":"214",
+            "icon":"trending_down",
+            "graph":"lineChart1"
+        }
+    ]
+}
