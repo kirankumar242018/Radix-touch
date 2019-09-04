@@ -8,6 +8,7 @@ export class HttpService {
   clientData:any;
   tableData:any;
   stockData:any;
+  socialData:any;
   constructor(public http:HttpClient) { }
 
   getJsonData(){
@@ -24,5 +25,10 @@ export class HttpService {
     this.stockData = this.http.get('../assets/stock.json')
     console.log('stock data..!',this.stockData)
     return this.stockData
+  }
+  getJsonSocialData(){
+    this.socialData = this.http.get('../assets/social.json')
+    console.log("social Data..!",this.socialData)
+    return this.socialData
   }
 }

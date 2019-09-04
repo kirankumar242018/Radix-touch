@@ -1,0 +1,20 @@
+{
+    "social_data":[
+        {
+            "image":"/assets/images/twitter.jpg",
+            "name":"Twitter",
+            "para":"Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad"
+        },
+        {
+            "image":"/assets/images/instagram.jpeg",
+            "name":"Instagram",
+            "para":"Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad"
+        },
+        {
+            "image":"/assets/images/facebook.png",
+            "name":"Facebook",
+            "para":"Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad"
+        }
+        
+    ]
+}

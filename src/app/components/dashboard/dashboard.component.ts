@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit {
   tableData;
   projectTableData;
   stockData;
+  socialData;
   color_code="red";
 
   columns=["#","Name","Status","ProjectName","Action"];
@@ -28,6 +29,7 @@ export class DashboardComponent implements OnInit {
     this.getTableData();
     this.getProjectData();
     this.getStockData();
+    this.getSocialData();
     //this.BarChart;
                 // BarChart
     this.BarChart=new Chart('barChart',{
@@ -312,6 +314,11 @@ export class DashboardComponent implements OnInit {
       this.stockData = data.stock_data;
     })
   }  
-  
+  getSocialData(){
+    this.jsonService.getJsonSocialData().subscribe(data=>{
+      console.log("social data..!",data.social_data);
+      this.socialData = data.social_data;
+    })
+  }
 
 }

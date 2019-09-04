@@ -347,20 +347,20 @@
 
   </div>
   <!-- *************************** Social Login *************************************** -->
-  <div class="social-card" fxLayout="row"  fxLayoutGap="25px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
-    <div class="card1" >
+  <div class="social-card" fxLayout="row"  fxLayoutGap="20px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
+    <div class="card1" *ngFor="let social of socialData" >
       <mat-card class="social-size" fxLayout="column" >
           <div class="twitter" >
-              <img src="../../../assets/images/twitter.jpg" width="40px" height="40px" >
-              <h4>Twitter</h4>
-              <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
-              <a href="" >Learn More</a>
+              <img src="{{social.image}}" width="40px" height="40px" >
+              <h4>{{social.name}}</h4>
+              <p>{{social.para}}</p>
+              <a href="#" >Learn More</a>
             </div>
           
       </mat-card>
        
     </div>
-    <div class="card2" >
+    <!-- <div class="card1" >
         <mat-card class="social-size" fxLayout="column" >
             <div class="twitter" >
                 <img src="../../../assets/images/instagram.jpeg" width="40px" height="40px" >
@@ -383,7 +383,7 @@
             
         </mat-card>
          
-    </div>
+    </div> -->
 
   </div>
 

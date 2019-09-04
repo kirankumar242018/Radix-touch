@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 // import {MatIconModule} from '@angular/material/icon';
-import { MatButtonModule,MatMenuModule,MatToolbarModule,MatIconModule,MatCardModule} from '@angular/material';
+import { MatButtonModule,MatMenuModule,MatToolbarModule,MatSidenavModule,MatIconModule,MatCardModule} from '@angular/material';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
@@ -20,6 +20,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatButtonModule,
     MatMenuModule, 
     MatToolbarModule,
+    MatSidenavModule,
     MatCardModule,
     MatProgressBarModule,
   ],
