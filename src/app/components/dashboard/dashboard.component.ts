@@ -236,6 +236,9 @@ export class DashboardComponent implements OnInit {
             // xAxes:[{
             //     display:false
             // }],
+            // zAxes:[{
+            //   display:false
+            // }],
             
             }
             }

@@ -1,643 +1,654 @@
-<div class="content" fxFlex=100>
-  <!--*********************** Header of dashboard ****************************** -->
-  <div class="body-header" fxLayout="row" fxLayout.xs="row" fxLayout.md="row" fxLayout.sm="row" >
-    <div class="heading1">
-      <h4>Dashboard</h4>
-    </div>
-
-    <div class="material-icons">
-      <span>
-        <mat-icon >house</mat-icon>
-        <mat-icon>chevron_right</mat-icon>
-      </span>
-
-    </div>
-    <div class="home">
-      <span>
-        <h6>Home</h6>
-      </span>
-
-    </div>
-    <div class="arrow">
-      <mat-icon>chevron_right</mat-icon>
-
-    </div>
-    <div class="dashboard">
-      <span>
-        <h6>Dashboard</h6>
-      </span>
-
-    </div>
-
+<div>
+  <div class="tool-bar">
+    <app-toolbar></app-toolbar>
   </div>
-
-  <!-- **************************   Four Card Charts ************************* -->
-  <div class="cards" fxLayout="row wrap"  fxLayoutGap="12px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
-    <div class="card-list" >
-      <mat-card class="card-size">
-        <div class="card-body">
-          <mat-card-title class="title">
-            
-                Total Income
-          </mat-card-title>
-          <mat-card-title  class="value">
-            <span>
-              $758
-              <mat-icon style="color: green">trending_up</mat-icon>
-            </span>
-          </mat-card-title>
+  <div> 
+    <div class="content" fxFlex=100>
+      <!--*********************** Header of dashboard ****************************** -->
+      <div class="body-header" fxLayout="row" fxLayout.xs="row" fxLayout.md="row" fxLayout.sm="row" >
+        <div class="heading1">
+          <h4>Dashboard</h4>
         </div>
-        <div>
-          <canvas id=barChart></canvas>
+    
+        <div class="material-icons">
+          <span>
+            <mat-icon >house</mat-icon>
+            <mat-icon>chevron_right</mat-icon>
+          </span>
+    
         </div>
-
-      </mat-card>
-
-    </div>
-
-    <div class="card-list">
-      <mat-card class="card-size">
-        <div class="card-body">
-          <mat-card-title class="title">
-            Order Recieved
-          </mat-card-title>
-          <mat-card-title class="value">
-            <span>
-              1025
-              <mat-icon style="color: red">trending_down</mat-icon>
-            </span>
-          </mat-card-title>
+        <div class="home">
+          <span>
+            <h6>Home</h6>
+          </span>
+    
         </div>
-        <div>
-          <canvas id="lineChart"></canvas>
+        <div class="arrow">
+          <mat-icon>chevron_right</mat-icon>
+    
         </div>
-
-
-      </mat-card>
-
-    </div>
-    <div class="card-list">
-      <mat-card class="card-size">
-        <div class="card-body">
-          <mat-card-title class="title">
-            Total Sales
-          </mat-card-title>
-          <mat-card-title class="value">
-            <span>
-              956
-              <mat-icon style="color: green">trending_up</mat-icon>
-            </span>
-          </mat-card-title>
+        <div class="dashboard">
+          <span>
+            <h6>Dashboard</h6>
+          </span>
+    
         </div>
-        <div>
-          <canvas id="pieChart"></canvas>
-        </div>
-
-      </mat-card>
-
-    </div>
-
-
-    <div class="card-list">
-      <mat-card class="card-size">
-        <div class="card-body">
-          <mat-card-title class="title" >
-            Total Active
-          </mat-card-title>
-          <mat-card-title class="value" >
-            <span>
-              214
-              <mat-icon style="color:red">trending_down</mat-icon>
-            </span>
-          </mat-card-title>
-        </div>
-        <div>
-          <canvas id="lineChart1"></canvas>
-        </div>
-
-      </mat-card>
-
-    </div>
-  </div>
-
-  <!-- ******************************   Report charts  *********************************** -->
-  <div class="card-report" fxLayout="row wrap" fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
-    <div fxLayout="row" class="card1" >
-      <mat-card class="report-size" fxLayoutGap="20px">
-        <div class="report-body">
-          <div fxLayout="row" >
-            <div class="title">
-              <div>
-                    <strong style="color: #353c48 !important;">
-                        Recent 
-                    </strong>
-                    Report
-              </div>
+    
+      </div>
+    
+      <!-- **************************   Four Card Charts ************************* -->
+      <div class="cards" fxLayout="row wrap"  fxLayoutGap="12px" fxLayout.xs="column" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
+        <div class="card-list" >
+          <mat-card class="card-size">
+            <div class="card-body">
+              <mat-card-title class="title">
                 
-              
+                    Total Income
+              </mat-card-title>
+              <mat-card-title  class="value">
+                <span>
+                  $758
+                  <mat-icon style="color: green">trending_up</mat-icon>
+                </span>
+              </mat-card-title>
             </div>
-            <div class="list">
-              <button mat-button [matMenuTriggerFor]="mainlist">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-
-              <mat-menu #mainlist="matMenu">
-                <button mat-menu-item>Action</button>
-                <button mat-menu-item>Another action</button>
-                <button mat-menu-item>Something else here</button>
-
-
-              </mat-menu>
+            <div>
+              <canvas id=barChart></canvas>
             </div>
-
-          </div>
-          <div class="report2">
-            <canvas id="reportChart"></canvas>
-
-          </div>
-
-
+    
+          </mat-card>
+    
         </div>
-      </mat-card>
-    </div>
-
-    <div fxLayout="row" class="card2"  >
-      <mat-card class="report-size">
-        <div class="report-body">
-          <div fxLayout="row">
-            <div class="title">
-             <div>
-               <strong style="color: #353c48 !important;">
-                  Recent
-               </strong>
-                Report
-             </div>
-                
-              
+    
+        <div class="card-list">
+          <mat-card class="card-size">
+            <div class="card-body">
+              <mat-card-title class="title">
+                Order Recieved
+              </mat-card-title>
+              <mat-card-title class="value">
+                <span>
+                  1025
+                  <mat-icon style="color: red">trending_down</mat-icon>
+                </span>
+              </mat-card-title>
             </div>
-            <div class="list">
-              <button mat-button [matMenuTriggerFor]="mainlist">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-
-              <mat-menu #mainlist="matMenu">
-                <button mat-menu-item>Action</button>
-                <button mat-menu-item>Another action</button>
-                <button mat-menu-item>Something else here</button>
-
-
-              </mat-menu>
+            <div>
+              <canvas id="lineChart"></canvas>
             </div>
-
-          </div>
-          <div class="report2">
-            <canvas id="radarChart"></canvas>
-          </div>
-
+    
+    
+          </mat-card>
+    
         </div>
-      </mat-card>
-    </div>
-
-
-  </div>
-
-  <!-- ************************ Card Tabels *************************** -->
-  <div class="card-table" fxLayout="row"  fxLayoutGap="30px" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" >
-    <div class="row" fxLayout.xs="column" >
-      <mat-card class="client-size" >
-        <div class="table-body">
-
-
-          <div fxLayout="row">
-            <div class="title">
-                <div>
-                    <strong style="color: #353c48 !important;">
-                       Clients
-                    </strong>
-                     Details
-                  </div>
+        <div class="card-list">
+          <mat-card class="card-size">
+            <div class="card-body">
+              <mat-card-title class="title">
+                Total Sales
+              </mat-card-title>
+              <mat-card-title class="value">
+                <span>
+                  956
+                  <mat-icon style="color: green">trending_up</mat-icon>
+                </span>
+              </mat-card-title>
             </div>
-            <div class="list">
-              <button mat-button [matMenuTriggerFor]="mainlist">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-
-              <mat-menu #mainlist="matMenu">
-                <button mat-menu-item>Action</button>
-                <button mat-menu-item>Another action</button>
-                <button mat-menu-item>Something else here</button>
-
-
-              </mat-menu>
+            <div>
+              <canvas id="pieChart"></canvas>
             </div>
+    
+          </mat-card>
+    
         </div>
-        <div class="table-contents">
-            <div class="table-responsive">
-                <div class="table center-aligned-table">
-                  <thead>
-                    <tr class="bg-light">
-                      <th class="border-bottom-0" >#</th>
-                      <th class="border-bottom-0">Name</th>
-                      <th class="border-bottom-0">Email</th>
-                      <th class="border-bottom-0">Status</th>
-                      <th class="border-bottom-0">Project Name</th>
-                      <th class="border-bottom-0">Action</th>
-                       
-  
-                    </tr>
-                  </thead>
-                  <tbody *ngFor='let items of tableData'>
-                    <tr>
-                      <td><img src="{{items.img}}" class="img-sm rounded-circle"></td>
-                      <td>{{items.name}}</td>
-                      <td>{{items.email}}</td>
-                      <td><label *ngIf="items.status == 'Active'" class="badge badge-success">{{items.status}}</label>
-                          <label *ngIf="items.status == 'InActive'" class="badge badge-danger">{{items.status}}
-                      </label></td>
-                      <td>{{items.projectName}}</td>
-                      <td> <div fxLayout="row" fxLayoutGap="10px" >
-                              <button class="btn" ><mat-icon  >{{items.action1}}</mat-icon></button>
-                              <button class="btn" ><mat-icon>{{items.action2}}</mat-icon></button>
-                            </div>
-                          
-                      </td>
-                    </tr>
-                  </tbody>
-  
-                </div>
-  
-  
-              </div>
-
-
-
-          
-        </div>
-        </div>
-      </mat-card>
-
-    </div>
-
-    <div class="row" >
-      <mat-card class="client-size1" >
-        <div class="table-body">
-
-
-          <div fxLayout="row">
-            <div class="title">
-                <div>
-                    <strong style="color: #353c48 !important;">
-                       New
-                    </strong>
-                     Projects
-                  </div>
+    
+    
+        <div class="card-list">
+          <mat-card class="card-size">
+            <div class="card-body">
+              <mat-card-title class="title" >
+                Total Active
+              </mat-card-title>
+              <mat-card-title class="value" >
+                <span>
+                  214
+                  <mat-icon style="color:red">trending_down</mat-icon>
+                </span>
+              </mat-card-title>
             </div>
-            <div class="list">
-              <button mat-button [matMenuTriggerFor]="mainlist">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-
-              <mat-menu #mainlist="matMenu">
-                <button mat-menu-item>Action</button>
-                <button mat-menu-item>Another action</button>
-                <button mat-menu-item>Something else here</button>
-
-
-              </mat-menu>
+            <div>
+              <canvas id="lineChart1"></canvas>
             </div>
+    
+          </mat-card>
+    
         </div>
-        <div class="table-contents">
-            <div class="table-responsive">
-                <div class="table center-aligned-table">
-                  <thead>
-                    <tr class="bg-light">
-                      <th class="border-bottom-0" >Product</th>
-                      <th class="border-bottom-0">Emplyess</th>
-                      <th class="border-bottom-0">Cost</th>
-                    </tr>
-                  </thead>
-                  <tbody *ngFor='let items of projectTableData'>
-                    <tr>
-                      <td>{{items.productName}}</td>
-                      <td  >
-                        <img src="{{items.image1}}"  class="img-sm rounded-circle">
-                        <img src="{{items.image2}}" style="margin-left: -14px;" class="img-sm rounded-circle">
-                        <img src="{{items.image3}}" style="margin-left: -14px;" class="img-sm rounded-circle">
-                        <span class="badge">+4</span>
-                      </td>
-                      
-                      <td>{{items.Cost}}</td>
-                    
-                    </tr>
-                  </tbody>
-  
-                </div>
-  
-  
-              </div>
-
-
-
-          
-        </div>
-        </div>
-      </mat-card>
-
-    </div>
-
-  </div>
-  <!-- *************************** Social Login *************************************** -->
-  <div class="social-card" fxLayout="row"  fxLayoutGap="20px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
-    <div class="card1" *ngFor="let social of socialData" >
-      <mat-card class="social-size" fxLayout="column" >
-          <div class="twitter" >
-              <img src="{{social.image}}" width="40px" height="40px" >
-              <h4>{{social.name}}</h4>
-              <p>{{social.para}}</p>
-              <a href="#" >Learn More</a>
-            </div>
-          
-      </mat-card>
-       
-    </div>
-    <!-- <div class="card1" >
-        <mat-card class="social-size" fxLayout="column" >
-            <div class="twitter" >
-                <img src="../../../assets/images/instagram.jpeg" width="40px" height="40px" >
-                <h4>Instagram</h4>
-                <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
-                <a href="" >Learn More</a>
-              </div>
-            
-        </mat-card>
-         
-    </div>
-    <div class="card1" >
-        <mat-card class="social-size" fxLayout="column" >
-            <div class="twitter" >
-                <img src="../../../assets/images/facebook.png" width="40px" height="40px" >
-                <h4>Facebook</h4>
-                <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
-                <a href="" >Learn More</a>
-              </div>
-            
-        </mat-card>
-         
-    </div> -->
-
-  </div>
-
-  <!-- *************************** Customer Review *************************************** -->
-
-  <div class="customer-review" fxLayout="row"  fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
-    <div class="card1" >
-      <mat-card class="custom-size" fxLayout="column" >
-          <div class="custom-body">
-            <div fxLayout="row" >
-              <div class="title">
+      </div>
+    
+      <!-- ******************************   Report charts  *********************************** -->
+      <div class="card-report" fxLayout="row wrap" fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
+        <div fxLayout="row" class="card1" >
+          <mat-card class="report-size" fxLayoutGap="20px">
+            <div class="report-body">
+              <div fxLayout="row" >
+                <div class="title">
                   <div>
-                      <strong style="color: #353c48 !important;">
-                         Earning
-                      </strong>
-                       Source
-                    </div>
-              </div>
-              <div class="list">
-                <button mat-button [matMenuTriggerFor]="mainlist">
-                  <mat-icon>more_vert</mat-icon>
-                </button>
-  
-                <mat-menu #mainlist="matMenu">
-                  <button mat-menu-item>Action</button>
-                  <button mat-menu-item>Another action</button>
-                  <button mat-menu-item>Something else here</button>
-  
-  
-                </mat-menu>
-              </div>
-  
-            </div>
-            <div class="score" >
-              <p>$90,808</p>
-            </div>
-            <div class="row1">
-              <div fxLayout="row" >
-                <div class="title">
-                  <mat-card-title>
-                    envanto.com
-                  </mat-card-title>
-                </div>
-                <div  >
-                  <button class="per-btn" >17%</button>
-                </div>
-                
-              </div>
-              <div class="progres-bar1" >
-                <mat-progress-bar style="height:8px;" mode="determinate" value="17"  ></mat-progress-bar>
-  
-              </div>
-            </div>
-
-            <div class="row2">
-              <div fxLayout="row" >
-                <div class="title">
-                  <mat-card-title>
-                    google.com
-                  </mat-card-title>
-                </div>
-                <div  >
-                  <button class="per-btn" >27%</button>
-                </div>
-                
-              </div>
-              <div class="progres-bar2" >
-                <mat-progress-bar style="height:8px;" mode="determinate" value="27" [color]="" ></mat-progress-bar>
-  
-              </div>
-            </div>
-            
-            <div class="row2">
-              <div fxLayout="row" >
-                <div class="title">
-                  <mat-card-title>
-                    yahoo.com
-                  </mat-card-title>
-                </div>
-                <div  >
-                  <button class="per-btn" >25%</button>
-                </div>
-                
-              </div>
-              <div class="progres-bar3" >
-                <mat-progress-bar style="height:8px;" mode="determinate" value="25" [color]="" ></mat-progress-bar>
-  
-              </div>
-            </div>
-
-            <div class="row2">
-              <div fxLayout="row" >
-                <div class="title">
-                  <mat-card-title>
-                    store
-                  </mat-card-title>
-                </div>
-                <div  >
-                  <button class="per-btn" >18%</button>
-                </div>
-                
-              </div>
-              <div class="progres-bar4" >
-                <mat-progress-bar style="height:8px;" mode="determinate" value="18" [color]="" ></mat-progress-bar>
-  
-              </div>
-            </div>
-
-            <div class="row2">
-              <div fxLayout="row" >
-                <div class="title">
-                  <mat-card-title>
-                    Others
-                  </mat-card-title>
-                </div>
-                <div  >
-                  <button class="per-btn" >13%</button>
-                </div>
-                
-              </div>
-              <div class="progres-bar5" >
-                <mat-progress-bar style="height:8px;"  mode="determinate" value="13" [color]="color_code" ></mat-progress-bar>
-  
-              </div>
-            </div>
-          </div>
-          
-      </mat-card>
-       
-    </div>
-    <div class="card2">
-        <mat-card class="custom-size2" >
-          <div  class="custom-body2" > 
-            <div fxLayout="row" >
-              <div class="title">
-                  <div>
-                    
                         <strong style="color: #353c48 !important;">
-                            Customer
-                         </strong>
-                          Review
+                            Recent 
+                        </strong>
+                        Report
+                  </div>
                     
-                     
-                    </div>
-              </div>
-              <div class="list">
-                <button mat-button [matMenuTriggerFor]="mainlist">
-                  <mat-icon>more_vert</mat-icon>
-                </button>
-  
-                <mat-menu #mainlist="matMenu">
-                  <button mat-menu-item>Action</button>
-                  <button mat-menu-item>Another action</button>
-                  <button mat-menu-item>Something else here</button>
-  
-  
-                </mat-menu>
-              </div>
-  
-            </div>
-            <div class="custom-ratings" fxLayout="row">
-              <div class="custom-image">
-                  <img src="../../../assets/images/client1.jpg" class="img-sm rounded-circle">
-               
-              </div>
-              <div class="custom-stars" fxLayout="column" >
-                <div>
-                    <h6 style>Alis Smith
-                    <span class="float-right">a week ago</span> </h6>
-                </div>
-                <div>
-                    <mat-icon style="color:green" >star</mat-icon>
-                    <mat-icon style="color:green">star</mat-icon>
-                    <mat-icon style="color:green">star</mat-icon>
-                    <mat-icon style="color:green">star_half</mat-icon>
-                    <mat-icon style="color:green">star_border</mat-icon>
-
-                </div>
-                
-
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rutrum ex, at ornare mi. 
-                    In quis scelerisque dui, eget rhoncus orci. 
-                    Fusce et sodales ipsum. Nam id nunc euismod, aliquet arcu quis, mattis nisi.
-                  </p>
-                </div>
-                <div>
-                    <mat-icon style="color:blue" >thumb_up_alt</mat-icon>
-                    <mat-icon style="color:red;margin-left: 10px;">thumb_down_alt</mat-icon>
-                </div>
-              </div>
-             
-              
-              
-            </div>
-            <div class="custom-ratings" fxLayout="row">
-              <div class="custom-image">
-                  <img src="../../../assets/images/client2.jpg" class="img-sm rounded-circle">
-               
-              </div>
-              <div class="custom-stars" fxLayout="column" >
-                <div>
-                    <h6 style>Jhon Dio
-                    <span class="float-right">a week ago</span> </h6>
-                </div>
-                <div>
-                    <mat-icon style="color:red" >star</mat-icon>
-                    <mat-icon style="color:red">star_half</mat-icon>
-                    <mat-icon style="color:red">star_border</mat-icon>
-                    <mat-icon style="color:red">star_border</mat-icon>
-                    <mat-icon style="color:red">star_border</mat-icon>
-
-                </div>
-                
-
-                <div>
-                  <p>
-                    Nam quis ligula est. Nunc sed risus non turpis tristique tempor. Ut sollicitudin faucibus magna nec gravida. 
-                    Suspendisse ullamcorper justo vel porta imperdiet. Nunc nec ipsum vel augue placerat faucibus.
-                  </p>
-                </div>
-                <div>
-                    <mat-icon style="color:blue" >thumb_up_alt</mat-icon>
-                    <mat-icon style="color:red;margin-left: 10px;">thumb_down_alt</mat-icon>
-                </div>
-              </div>
-              
-             
-              
-              
-            </div>
-            <div class="view-review">
-                <a href="#" >View all Customer Reviews </a>
-
-              </div>
-           
-          
                   
+                </div>
+                <div class="list">
+                  <button mat-button [matMenuTriggerFor]="mainlist">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+    
+                  <mat-menu #mainlist="matMenu">
+                    <button mat-menu-item>Action</button>
+                    <button mat-menu-item>Another action</button>
+                    <button mat-menu-item>Something else here</button>
+    
+    
+                  </mat-menu>
+                </div>
+    
+              </div>
+              <div class="report2">
+                <canvas id="reportChart"></canvas>
+    
+              </div>
+    
+    
+            </div>
+          </mat-card>
+        </div>
+    
+        <div fxLayout="row" class="card2"  >
+          <mat-card class="report-size">
+            <div class="report-body">
+              <div fxLayout="row">
+                <div class="title">
+                 <div>
+                   <strong style="color: #353c48 !important;">
+                      Recent
+                   </strong>
+                    Report
+                 </div>
+                    
+                  
+                </div>
+                <div class="list">
+                  <button mat-button [matMenuTriggerFor]="mainlist">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+    
+                  <mat-menu #mainlist="matMenu">
+                    <button mat-menu-item>Action</button>
+                    <button mat-menu-item>Another action</button>
+                    <button mat-menu-item>Something else here</button>
+    
+    
+                  </mat-menu>
+                </div>
+    
+              </div>
+              <div class="report2">
+                <canvas id="radarChart"></canvas>
+              </div>
+    
+            </div>
+          </mat-card>
+        </div>
+    
+    
+      </div>
+    
+      <!-- ************************ Card Tabels *************************** -->
+      <div class="card-table" fxLayout="row"  fxLayoutGap="30px" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" >
+        <div class="row" fxLayout.xs="column" >
+          <mat-card class="client-size" >
+            <div class="table-body">
+    
+    
+              <div fxLayout="row">
+                <div class="title">
+                    <div>
+                        <strong style="color: #353c48 !important;">
+                           Clients
+                        </strong>
+                         Details
+                      </div>
+                </div>
+                <div class="list">
+                  <button mat-button [matMenuTriggerFor]="mainlist">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+    
+                  <mat-menu #mainlist="matMenu">
+                    <button mat-menu-item>Action</button>
+                    <button mat-menu-item>Another action</button>
+                    <button mat-menu-item>Something else here</button>
+    
+    
+                  </mat-menu>
+                </div>
+            </div>
+            <div class="table-contents">
+                <div class="table-responsive">
+                    <div class="table center-aligned-table">
+                      <thead>
+                        <tr class="bg-light">
+                          <th class="border-bottom-0" >#</th>
+                          <th class="border-bottom-0">Name</th>
+                          <th class="border-bottom-0">Email</th>
+                          <th class="border-bottom-0">Status</th>
+                          <th class="border-bottom-0">Project Name</th>
+                          <th class="border-bottom-0">Action</th>
+                           
+      
+                        </tr>
+                      </thead>
+                      <tbody *ngFor='let items of tableData'>
+                        <tr>
+                          <td><img src="{{items.img}}" class="img-sm rounded-circle"></td>
+                          <td>{{items.name}}</td>
+                          <td>{{items.email}}</td>
+                          <td><label *ngIf="items.status == 'Active'" class="badge badge-success">{{items.status}}</label>
+                              <label *ngIf="items.status == 'InActive'" class="badge badge-danger">{{items.status}}
+                          </label></td>
+                          <td>{{items.projectName}}</td>
+                          <td> <div fxLayout="row" fxLayoutGap="10px" >
+                                  <button class="btn" ><mat-icon  >{{items.action1}}</mat-icon></button>
+                                  <button class="btn" ><mat-icon>{{items.action2}}</mat-icon></button>
+                                </div>
+                              
+                          </td>
+                        </tr>
+                      </tbody>
+      
+                    </div>
+      
+      
+                  </div>
+    
+    
+    
+              
+            </div>
+            </div>
+          </mat-card>
+    
+        </div>
+    
+        <div class="row" >
+          <mat-card class="client-size1" >
+            <div class="table-body">
+    
+    
+              <div fxLayout="row">
+                <div class="title">
+                    <div>
+                        <strong style="color: #353c48 !important;">
+                           New
+                        </strong>
+                         Projects
+                      </div>
+                </div>
+                <div class="list">
+                  <button mat-button [matMenuTriggerFor]="mainlist">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+    
+                  <mat-menu #mainlist="matMenu">
+                    <button mat-menu-item>Action</button>
+                    <button mat-menu-item>Another action</button>
+                    <button mat-menu-item>Something else here</button>
+    
+    
+                  </mat-menu>
+                </div>
+            </div>
+            <div class="table-contents">
+                <div class="table-responsive">
+                    <div class="table center-aligned-table">
+                      <thead>
+                        <tr class="bg-light">
+                          <th class="border-bottom-0" >Product</th>
+                          <th class="border-bottom-0">Emplyess</th>
+                          <th class="border-bottom-0">Cost</th>
+                        </tr>
+                      </thead>
+                      <tbody *ngFor='let items of projectTableData'>
+                        <tr>
+                          <td>{{items.productName}}</td>
+                          <td  >
+                            <img src="{{items.image1}}"  class="img-sm rounded-circle">
+                            <img src="{{items.image2}}" style="margin-left: -14px;" class="img-sm rounded-circle">
+                            <img src="{{items.image3}}" style="margin-left: -14px;" class="img-sm rounded-circle">
+                            <span class="badge">+4</span>
+                          </td>
+                          
+                          <td>{{items.Cost}}</td>
+                        
+                        </tr>
+                      </tbody>
+      
+                    </div>
+      
+      
+                  </div>
+    
+    
+    
+              
+            </div>
+            </div>
+          </mat-card>
+    
+        </div>
+    
+      </div>
+      <!-- *************************** Social Login *************************************** -->
+      <div class="social-card" fxLayout="row"  fxLayoutGap="20px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
+        <div class="card1" *ngFor="let social of socialData" >
+          <mat-card class="social-size" fxLayout="column" >
+              <div class="twitter" >
+                  <img src="{{social.image}}" width="40px" height="40px" >
+                  <h4>{{social.name}}</h4>
+                  <p>{{social.para}}</p>
+                  <a href="#" >Learn More</a>
+                </div>
+              
+          </mat-card>
+           
+        </div>
+        <!-- <div class="card1" >
+            <mat-card class="social-size" fxLayout="column" >
+                <div class="twitter" >
+                    <img src="../../../assets/images/instagram.jpeg" width="40px" height="40px" >
+                    <h4>Instagram</h4>
+                    <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
+                    <a href="" >Learn More</a>
+                  </div>
                 
+            </mat-card>
              
-
-
-
-
-          </div>
-        </mat-card>
+        </div>
+        <div class="card1" >
+            <mat-card class="social-size" fxLayout="column" >
+                <div class="twitter" >
+                    <img src="../../../assets/images/facebook.png" width="40px" height="40px" >
+                    <h4>Facebook</h4>
+                    <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
+                    <a href="" >Learn More</a>
+                  </div>
+                
+            </mat-card>
+             
+        </div> -->
+    
+      </div>
+    
+      <!-- *************************** Customer Review *************************************** -->
+    
+      <div class="customer-review" fxLayout="row"  fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
+        <div class="card1" >
+          <mat-card class="custom-size" fxLayout="column" >
+              <div class="custom-body">
+                <div fxLayout="row" >
+                  <div class="title">
+                      <div>
+                          <strong style="color: #353c48 !important;">
+                             Earning
+                          </strong>
+                           Source
+                        </div>
+                  </div>
+                  <div class="list">
+                    <button mat-button [matMenuTriggerFor]="mainlist">
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+      
+                    <mat-menu #mainlist="matMenu">
+                      <button mat-menu-item>Action</button>
+                      <button mat-menu-item>Another action</button>
+                      <button mat-menu-item>Something else here</button>
+      
+      
+                    </mat-menu>
+                  </div>
+      
+                </div>
+                <div class="score" >
+                  <p>$90,808</p>
+                </div>
+                <div class="row1">
+                  <div fxLayout="row" >
+                    <div class="title">
+                      <mat-card-title>
+                        envanto.com
+                      </mat-card-title>
+                    </div>
+                    <div  >
+                      <button class="per-btn" >17%</button>
+                    </div>
+                    
+                  </div>
+                  <div class="progres-bar1" >
+                    <mat-progress-bar style="height:8px;" mode="determinate" value="17"  ></mat-progress-bar>
+      
+                  </div>
+                </div>
+    
+                <div class="row2">
+                  <div fxLayout="row" >
+                    <div class="title">
+                      <mat-card-title>
+                        google.com
+                      </mat-card-title>
+                    </div>
+                    <div  >
+                      <button class="per-btn" >27%</button>
+                    </div>
+                    
+                  </div>
+                  <div class="progres-bar2" >
+                    <mat-progress-bar style="height:8px;" mode="determinate" value="27" [color]="" ></mat-progress-bar>
+      
+                  </div>
+                </div>
+                
+                <div class="row2">
+                  <div fxLayout="row" >
+                    <div class="title">
+                      <mat-card-title>
+                        yahoo.com
+                      </mat-card-title>
+                    </div>
+                    <div  >
+                      <button class="per-btn" >25%</button>
+                    </div>
+                    
+                  </div>
+                  <div class="progres-bar3" >
+                    <mat-progress-bar style="height:8px;" mode="determinate" value="25" [color]="" ></mat-progress-bar>
+      
+                  </div>
+                </div>
+    
+                <div class="row2">
+                  <div fxLayout="row" >
+                    <div class="title">
+                      <mat-card-title>
+                        store
+                      </mat-card-title>
+                    </div>
+                    <div  >
+                      <button class="per-btn" >18%</button>
+                    </div>
+                    
+                  </div>
+                  <div class="progres-bar4" >
+                    <mat-progress-bar style="height:8px;" mode="determinate" value="18" [color]="" ></mat-progress-bar>
+      
+                  </div>
+                </div>
+    
+                <div class="row2">
+                  <div fxLayout="row" >
+                    <div class="title">
+                      <mat-card-title>
+                        Others
+                      </mat-card-title>
+                    </div>
+                    <div  >
+                      <button class="per-btn" >13%</button>
+                    </div>
+                    
+                  </div>
+                  <div class="progres-bar5" >
+                    <mat-progress-bar style="height:8px;"  mode="determinate" value="13" [color]="color_code" ></mat-progress-bar>
+      
+                  </div>
+                </div>
+              </div>
+              
+          </mat-card>
+           
+        </div>
+        <div class="card2">
+            <mat-card class="custom-size2" >
+              <div  class="custom-body2" > 
+                <div fxLayout="row" >
+                  <div class="title">
+                      <div>
+                        
+                            <strong style="color: #353c48 !important;">
+                                Customer
+                             </strong>
+                              Review
+                        
+                         
+                        </div>
+                  </div>
+                  <div class="list">
+                    <button mat-button [matMenuTriggerFor]="mainlist">
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+      
+                    <mat-menu #mainlist="matMenu">
+                      <button mat-menu-item>Action</button>
+                      <button mat-menu-item>Another action</button>
+                      <button mat-menu-item>Something else here</button>
+      
+      
+                    </mat-menu>
+                  </div>
+      
+                </div>
+                <div class="custom-ratings" fxLayout="row">
+                  <div class="custom-image">
+                      <img src="../../../assets/images/client1.jpg" class="img-sm rounded-circle">
+                   
+                  </div>
+                  <div class="custom-stars" fxLayout="column" >
+                    <div>
+                        <h6 style>Alis Smith
+                        <span class="float-right">a week ago</span> </h6>
+                    </div>
+                    <div>
+                        <mat-icon style="color:green" >star</mat-icon>
+                        <mat-icon style="color:green">star</mat-icon>
+                        <mat-icon style="color:green">star</mat-icon>
+                        <mat-icon style="color:green">star_half</mat-icon>
+                        <mat-icon style="color:green">star_border</mat-icon>
+    
+                    </div>
+                    
+    
+                    <div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel rutrum ex, at ornare mi. 
+                        In quis scelerisque dui, eget rhoncus orci. 
+                        Fusce et sodales ipsum. Nam id nunc euismod, aliquet arcu quis, mattis nisi.
+                      </p>
+                    </div>
+                    <div>
+                        <mat-icon style="color:blue" >thumb_up_alt</mat-icon>
+                        <mat-icon style="color:red;margin-left: 10px;">thumb_down_alt</mat-icon>
+                    </div>
+                  </div>
+                 
+                  
+                  
+                </div>
+                <div class="custom-ratings" fxLayout="row">
+                  <div class="custom-image">
+                      <img src="../../../assets/images/client2.jpg" class="img-sm rounded-circle">
+                   
+                  </div>
+                  <div class="custom-stars" fxLayout="column" >
+                    <div>
+                        <h6 style>Jhon Dio
+                        <span class="float-right">a week ago</span> </h6>
+                    </div>
+                    <div>
+                        <mat-icon style="color:red" >star</mat-icon>
+                        <mat-icon style="color:red">star_half</mat-icon>
+                        <mat-icon style="color:red">star_border</mat-icon>
+                        <mat-icon style="color:red">star_border</mat-icon>
+                        <mat-icon style="color:red">star_border</mat-icon>
+    
+                    </div>
+                    
+    
+                    <div>
+                      <p>
+                        Nam quis ligula est. Nunc sed risus non turpis tristique tempor. Ut sollicitudin faucibus magna nec gravida. 
+                        Suspendisse ullamcorper justo vel porta imperdiet. Nunc nec ipsum vel augue placerat faucibus.
+                      </p>
+                    </div>
+                    <div>
+                        <mat-icon style="color:blue" >thumb_up_alt</mat-icon>
+                        <mat-icon style="color:red;margin-left: 10px;">thumb_down_alt</mat-icon>
+                    </div>
+                  </div>
+                  
+                 
+                  
+                  
+                </div>
+                <div class="view-review">
+                    <a href="#" >View all Customer Reviews </a>
+    
+                  </div>
+               
+              
+                      
+                    
+                 
+    
+    
+    
+    
+              </div>
+            </mat-card>
+        </div>
+    
+    
+      </div>
+    
+    
+      
+    
+    
     </div>
-
-
   </div>
-
-
-  
-
 
 </div>
+
+
+
