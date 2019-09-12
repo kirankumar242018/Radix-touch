@@ -1,3 +1,5 @@
+
+
 .toolbar-body{
     padding-left:35px;
    
@@ -7,13 +9,30 @@
     background-color: #413752 !important;
     margin-bottom:5px;
     top: 0;
-     position: fixed;
-     z-index: 1;
-     background-color: inherit;
+    position: fixed;
+    z-index: 1;
+    background-color: inherit;
+    .mat-icon{
+        color:white !important;
+    }
 }
-.mat-icon{
-    color:white !important;
+
+
+
+.toolbar-container1{
+    //background-color: white !important;
+    background-color: white !important;
+    margin-bottom:5px;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: inherit;
+    .mat-icon1{
+        color:black !important;
+    }
 }
+
+
 
 .btn{
     padding: 0;
@@ -25,3 +44,62 @@
     position:relative;
     left:5px;
 }
+
+.label-count{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 10px;
+    line-height: 15px;
+    background-color: #ff9800 !important;
+    color: #fff;
+    padding: 3px 3px;
+    border-radius: 3px;
+}
+// .dropdown{
+//     margin-top: 60px !important;
+//     width: 325px;
+//     right: 0;
+//     left: auto;
+//     position: absolute !important;
+//     top: 0;
+//     padding: 0;
+//     border-radius: 5px;
+// }
+// .dropdown::after{
+//     content: "";
+//     position: absolute;
+//     top: -6px;
+//     right: 20px;
+//     display: inline-block !important;
+//     border-right: 6px solid transparent;
+//     border-bottom: 6px solid #fff;
+//     border-left: 6px solid transparent;
+// }
+// .dropdown::before{
+//     content: "";
+//     position: absolute;
+//     top: -7px;
+//     right: 19px;
+//     display: inline-block !important;
+//     border-right: 7px solid transparent;
+//     border-bottom: 7px solid #eee;
+//     border-left: 7px solid transparent;
+//     border-bottom-color: rgba(0,0,0,0.2);
+// }
+.notification .dropdown {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    background: #d5d5d5;
+}
+.notification:hover .dropdown {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+}
+@media screen and (max-width:750px){
+    .other-btn{
+        display: none !important;
+    }
+}
+

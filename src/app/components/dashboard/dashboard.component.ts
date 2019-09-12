@@ -227,7 +227,7 @@ export class DashboardComponent implements OnInit {
             display:false
             },
             legend:{
-            display:true
+            display:false
             },
             scales:{
             yAxes:[{
@@ -282,7 +282,7 @@ export class DashboardComponent implements OnInit {
               display:false
               },
               legend:{
-              display:true
+              display:false
               },
               scales:{
               yAxes:[{
@@ -299,7 +299,7 @@ export class DashboardComponent implements OnInit {
   }
   getTableData(){
     this.jsonService.getJsonData().subscribe(data=>{
-      console.log("data..!",data.table_data);
+      //console.log("data..!",data.table_data);
       this.tableData=data.table_data;      
 
     })
@@ -307,19 +307,19 @@ export class DashboardComponent implements OnInit {
     }
   getProjectData(){
     this.jsonService.getJsonTableData().subscribe(data=>{
-      console.log("project data..!",data.table_data);
+      //console.log("project data..!",data.table_data);
       this.projectTableData = data.table_data;
     })
   }
   getStockData(){
     this.jsonService.getJsonStockData().subscribe(data=>{
-      console.log("stock data..!",data.stock_data);
+      //console.log("stock data..!",data.stock_data);
       this.stockData = data.stock_data;
     })
   }  
   getSocialData(){
     this.jsonService.getJsonSocialData().subscribe(data=>{
-      console.log("social data..!",data.social_data);
+      //console.log("social data..!",data.social_data);
       this.socialData = data.social_data;
     })
   }

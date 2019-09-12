@@ -13,22 +13,22 @@ export class HttpService {
 
   getJsonData(){
     this.clientData = this.http.get('../../assets/table.json')
-    console.log('table data..!',this.clientData)
+    //console.log('table data..!',this.clientData)
     return this.clientData
   }
   getJsonTableData(){
     this.tableData = this.http.get('../assets/table2.json')
-    console.log('project data..!',this.tableData)
+    //console.log('project data..!',this.tableData)
     return this.tableData
   }
   getJsonStockData(){
     this.stockData = this.http.get('../assets/stock.json')
-    console.log('stock data..!',this.stockData)
+    //console.log('stock data..!',this.stockData)
     return this.stockData
   }
   getJsonSocialData(){
     this.socialData = this.http.get('../assets/social.json')
-    console.log("social Data..!",this.socialData)
+    //console.log("social Data..!",this.socialData)
     return this.socialData
   }
 }

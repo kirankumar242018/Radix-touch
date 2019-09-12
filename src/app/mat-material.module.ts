@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule,MatMenuModule,MatToolbarModule,MatSidenavModule,MatIconModule,MatCardModule} from '@angular/material';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 
+
 @NgModule({
   imports: [
     CommonModule,
@@ -13,6 +14,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatToolbarModule,
     MatCardModule,
     MatProgressBarModule,
+    MatMenuModule, 
+    MatButtonModule
+    
   ],
   exports:[
     CommonModule,
@@ -23,6 +27,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatSidenavModule,
     MatCardModule,
     MatProgressBarModule,
+    MatMenuModule, 
+    MatButtonModule
+    
   ],
   declarations: []
 })
