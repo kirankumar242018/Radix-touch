@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "ng build --aot -prod"
   },
   "engines": {
-    "node": "v8.10.0",
+    "node": "8.10.0",
     "npm": "3.5.2"
   },
   "private": true,
