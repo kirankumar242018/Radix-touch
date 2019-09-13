@@ -5,11 +5,11 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/Radixtouch'));
+app.use(express.static(__dirname + '/dist/Radix-touch'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/Radixtouch/index.html'));
+res.sendFile(path.join(__dirname+'/dist/Radix-touch/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
