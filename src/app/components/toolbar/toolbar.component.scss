@@ -21,14 +21,20 @@
 
 .toolbar-container1{
     //background-color: white !important;
-    background-color: white !important;
+    background-color: white;
     margin-bottom:5px;
     top: 0;
     position: fixed;
     z-index: 1;
     background-color: inherit;
     .mat-icon1{
-        color:black !important;
+        color:black;
+    }
+    .toolbar-container{
+        background-color: #413752 !important;
+        .mat-icon1{
+            color:white !important;
+        }
     }
 }
 

@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, OnInit,Inject } from '@angular/core';
+import { Component, OnInit,Inject, HostListener } from '@angular/core';
 import{DataService} from '../../services/DataService/data.service';
 import * as $ from 'jquery';
 
@@ -9,7 +9,7 @@ import * as $ from 'jquery';
   styleUrls: ['./toolbar.component.scss'],
 })
 export class ToolbarComponent implements OnInit {
-  scroll="up";
+public scrollEvent=false;
 
   //isfullscreen:boolean;
   
@@ -58,6 +58,16 @@ export class ToolbarComponent implements OnInit {
     }
     
   }
+
+@HostListener("window:scroll",['$event']) onWindowScroll(e) {
+  //console.log("kjjki");
+  //console.log(e.target['scrollingElement'].scrollTop,"ggggg")
+  this.scrollEvent = false;
+  if(e.target['scrollingElement'].scrollTop >= 53){
+    this.scrollEvent = true;
+  }
+}
+
 
 
 

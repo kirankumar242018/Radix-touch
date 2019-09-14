@@ -1,7 +1,7 @@
 <div class="tool-bar" fxFlex=100>
-  <div class="toolbar-body" [ngClass]="scroll=='up' ? 'toolbar-container':'toolbar-container1'">
+  <div class="toolbar-body" [ngClass]="scrollEvent ? 'toolbar-container':'toolbar-container1'">
     
-    <mat-toolbar class="toolbar-container" >
+    <!-- <mat-toolbar class="toolbar-container" >
       <div class="toolbar-contents" fxLayout="row"  fxFlex=100>
           <div class="menu-btn" fxFlex=80  fxLayoutAlign="start center">
               <button  mat-icon-button>
@@ -37,7 +37,7 @@
           
           
     </div>
-    </mat-toolbar>
+    </mat-toolbar> -->
 
     <!-- ************************second toolbar for animation purpose**********************************...! -->
     <mat-toolbar class="toolbar-container1" >

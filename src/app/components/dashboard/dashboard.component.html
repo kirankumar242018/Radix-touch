@@ -375,50 +375,27 @@
     
       </div>
       <!-- *************************** Social Login *************************************** -->
-      <div class="social-card" fxLayout="row"  fxLayoutGap="20px" fxLayout.xs="row wrap" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
-        <div class="card1" *ngFor="let social of socialData" >
+      <div class="social-card" fxLayout="row"  fxLayoutGap="20px"   fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
+        <div class="itemcards" *ngFor="let social of socialData" >
           <mat-card class="social-size" fxLayout="column" >
               <div class="twitter" >
                   <img src="{{social.image}}" width="40px" height="40px" >
                   <h4>{{social.name}}</h4>
                   <p>{{social.para}}</p>
                   <a href="#" >Learn More</a>
-                </div>
+              </div>
               
           </mat-card>
            
         </div>
-        <!-- <div class="card1" >
-            <mat-card class="social-size" fxLayout="column" >
-                <div class="twitter" >
-                    <img src="../../../assets/images/instagram.jpeg" width="40px" height="40px" >
-                    <h4>Instagram</h4>
-                    <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
-                    <a href="" >Learn More</a>
-                  </div>
-                
-            </mat-card>
-             
-        </div>
-        <div class="card1" >
-            <mat-card class="social-size" fxLayout="column" >
-                <div class="twitter" >
-                    <img src="../../../assets/images/facebook.png" width="40px" height="40px" >
-                    <h4>Facebook</h4>
-                    <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad</p>
-                    <a href="" >Learn More</a>
-                  </div>
-                
-            </mat-card>
-             
-        </div> -->
+       
     
       </div>
     
       <!-- *************************** Customer Review *************************************** -->
     
       <div class="customer-review" fxLayout="row"  fxLayoutGap="25px" fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
-        <div class="card1" >
+        <div class="review-card1" >
           <mat-card class="custom-size" fxLayout="column" >
               <div class="custom-body">
                 <div fxLayout="row" >
@@ -542,7 +519,7 @@
           </mat-card>
            
         </div>
-        <div class="card2">
+        <div class="review-card2">
             <mat-card class="custom-size2" >
               <div  class="custom-body2" > 
                 <div fxLayout="row" >
