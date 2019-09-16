@@ -179,7 +179,7 @@
         </div>
     
         <div fxLayout="row" class="card2"  >
-          <mat-card class="report-size">
+          <mat-card class="report-size1">
             <div class="report-body">
               <div fxLayout="row">
                 <div class="title">
@@ -375,9 +375,9 @@
     
       </div>
       <!-- *************************** Social Login *************************************** -->
-      <div class="social-card" fxLayout="row"  fxLayoutGap="20px"   fxLayout.xs="column" fxLayout.md="column" fxLayout.sm="column" >
+      <div class="social-card" fxLayout="row"  fxLayoutGap="20px"   fxLayout.xs="column" fxLayout.md="row wrap" fxLayout.sm="row wrap" >
         <div class="itemcards" *ngFor="let social of socialData" >
-          <mat-card class="social-size" fxLayout="column" >
+          <mat-card class="social-size" >
               <div class="twitter" >
                   <img src="{{social.image}}" width="40px" height="40px" >
                   <h4>{{social.name}}</h4>

@@ -1,5 +1,5 @@
 @import '../../../scss/mixins.scss';
-
+@import '../../../scss/variables.scss';
 
 
 .content{
@@ -69,10 +69,11 @@
     
 }
 .card-size{
-    height:160px;
+    //height:160px;
     width:275px;
     border-radius: 15px;
     min-width:275px;
+    //min-height: 160px;
 }
 .title{
     font-size:18px;
@@ -103,6 +104,15 @@
     //height:375px;
     width:578px;
     min-width:275px;
+    // min-height:375px;
+    border-radius: 15px;
+}
+.report-size1{
+    //height:375px;
+    width:578px;
+    min-width:275px;
+    // min-height:375px;
+
     border-radius: 15px;
 }
 .card-report{
@@ -385,13 +395,19 @@ span.badge {
     }
 }
 
-@media screen and (max-width:360px){
+@media (min-width:320px) and (max-width:375px){
     .card1{
         margin-right: 27px;
        
     }
     .card2{
         margin-right:27px;
+    }
+    .report-size{
+        width:40%;
+    }
+    .report-size1{
+        width:40%;
     }
     .client-size{
         width:40%;
@@ -416,6 +432,122 @@ span.badge {
     .custom-size{
         width:40%;
         margin-right:27px;
+    }
+}
+
+@media (min-width:375px) and (max-width:600px){
+    .content{
+        position: relative;
+        left: 25px;
+    }
+    
+    .card-size{
+        width:$width;
+        
+    }
+    
+    #barChart{
+        width: 80px !important;
+        height:60px !important;
+    }
+    #pieChart{
+        width:80px !important;
+        height:60px !important;
+    }
+    #lineChart{
+        width:80px !important;
+        height:60px !important;
+    }
+    #lineChart1{
+        width:80px !important;
+        height:60px !important;
+    }
+    .report-size{
+        width:$width;
+    }
+    .report-size1{
+        width:$width;
+    }
+   
+    .client-size{
+        width:78%;
+    }
+    .client-size1{
+        width:78%;
+    }
+    .social-size{
+        width:$width;
+        height:275px;
+    }
+    .custom-size{
+        width:$width;
+       
+    }
+    .custom-size2{
+        width:$width;
+    }
+
+}
+@media (min-width:600px) and (max-width:768px){
+    .card-size{
+        width:100%;
+    }
+    
+    
+    .report-size{
+        width:81%;
+    }
+    .report-size1{
+        width:81%;
+    }
+   
+    .client-size{
+        width:80%;
+    }
+    .client-size1{
+        width:80%;
+    }
+    .social-size{
+        width:50%;
+        
+    }
+    .custom-size{
+        width:82%;
+       
+    }
+    .custom-size2{
+        width:82%;
+    }
+}
+@media (min-width:768px) and (max-width:120px){
+    .card-size{
+        width:100%;
+    }
+    
+    
+    .report-size{
+        width:100%;
+    }
+    .report-size1{
+        width:100%;
+    }
+   
+    .client-size{
+        width:100%;
+    }
+    .client-size1{
+        width:100%;
+    }
+    .social-size{
+        width:100%;
+        
+    }
+    .custom-size{
+        width:100%;
+       
+    }
+    .custom-size2{
+        width:100%;
     }
 }
 
